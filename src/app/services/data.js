@@ -68,6 +68,7 @@ exports.data = [
                 "Flask",
                 "RESTful API",
                 "Netlify",
+                "Docker",
                 "Heroku"
             ]
         },

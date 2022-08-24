@@ -237,7 +237,7 @@
             height: 200px;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             float: right;
             overflow: hidden;
             position: absolute;
@@ -251,7 +251,7 @@
             height: 200px;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             float: right;
             overflow: hidden;
             position: absolute;
@@ -260,7 +260,7 @@
 
 
         &-image {
-            height: 280px;
+            height: 200px;
             z-index: 0 !important;
             transition: all 300ms ease;
             filter: grayscale(40%) blur(1px) brightness(70%) opacity(60%)
