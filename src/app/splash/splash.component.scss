@@ -1,0 +1,35 @@
+@import "../../vars";
+
+.splash {
+    &-container {
+        padding: 30px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &-h4 {
+        color: $purple_text;
+        font-size: 1.1em;
+        font-weight: 500;
+        margin: 0 0 40px 0;
+        letter-spacing: 1px;
+    }
+
+    &-h1 {
+        display: block;
+        font-size: 6em;
+        font-weight: 100;
+        margin: 0 0 50px 0;
+        letter-spacing: 1px;
+    }
+
+    &-h2 {
+        color: #b9b1b9;
+        font-size: 3em;
+        font-weight: 300;
+        letter-spacing: 1px;
+        margin: 0 0 30px 0;
+    }
+}

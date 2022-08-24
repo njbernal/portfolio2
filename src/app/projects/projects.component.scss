@@ -1,0 +1,138 @@
+@import "../../vars";
+
+.projects {
+    &-container {
+        padding: 30px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &-h1 {
+        display: inline;
+        font-size: 3em;
+        font-weight: 100;
+        margin: 0 0 20px 0;
+        letter-spacing: 1px;
+    }
+}
+
+.project {
+    padding: 40px;
+    margin: 10px 0 10px;
+    height: 360px;
+
+    &-h2 {
+        display: block;
+        font-size: 2.2em;
+        font-weight: 300;
+        margin: 0 0 20px 0;
+        letter-spacing: 1px;
+        letter-spacing: 2px;
+    }
+
+    &-h3 {
+        display: block;
+        color: $purple_text;
+        font-size: 1em;
+        font-weight: 200;
+        margin: 0;
+        padding: 0;
+        letter-spacing: 1px;
+    }
+
+    &-info {
+        position: relative;
+        z-index: 5 !important;
+    }
+
+    &-image-container {
+        background-color: $purple_text_op;
+        border-radius: 10px;
+        display: flex;
+        justify-content: flex-end;
+        float: right;
+    }
+
+    &-image {
+        height: 280px;
+        z-index: 0 !important;
+        filter: grayscale(50%) blur(1px) brightness(50%) opacity(40%)
+    }
+
+    &-description {
+        max-width: 70%;
+        height: 150px;
+        padding: 10px;
+        background-color: $background_op;
+        border-radius: 5px 20px 20px 5px;
+        color: $muted_text;
+    }
+
+    &-tech,
+    &-links {
+        max-width: 100%;
+        margin: 20px 0 0 0;
+        list-style: none;
+        width: 100%;
+        text-align: left;
+        float: left;
+    }
+
+    &-tech {
+        margin-top: -30px;
+    }
+
+    &-links {
+        margin-top: 0px;
+    }
+
+    &-tech li {
+        display: inline-block;
+        margin: 0 10px 0 0;
+        letter-spacing: 0px;
+        font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+        font-size: 13px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 500;
+    }
+
+    &-links li {
+        display: inline-block;
+        margin: 0 20px 0 0;
+    }
+
+}
+
+.svg-icon.github {
+    mask-image: url("/assets/icons/github.svg");
+}
+
+.svg-icon.link {
+    mask-image: url("/assets/icons/link.svg");
+}
+
+.svg-icon {
+    background-color: $purple_text;
+    height: 30px;
+    width: 30px;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+.svg-icon:hover {
+    background-color: white;
+}

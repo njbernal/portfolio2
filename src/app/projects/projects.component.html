@@ -1,0 +1,28 @@
+<div class="projects-container">
+    <h1 class="projects-h1">Current projects</h1>
+    <mat-divider variant="string">test</mat-divider>
+    <ng-container *ngFor="let project of projects">
+        <div class="project">
+            <div class="project-image-container">
+                <img class="project-image" [src]="project.image" />
+            </div>
+            <div class="project-info">
+                <h3 class="project-h3">Featured Project</h3>
+                <h2 class="project-h2">{{project.title}}</h2>
+
+                <div class="project-description">
+                    {{project.description}}
+                </div>
+                <ul class="project-tech">
+                    <li *ngFor="let tech of project.tech">{{tech}}</li>
+                </ul>
+                <ul class="project-links">
+                    <li *ngFor="let link of project.links">
+                        <div *ngIf="link.name == 'Github'" class="svg-icon github"></div>
+                        <div *ngIf="link.name == 'Public'" class="svg-icon link"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </ng-container>
+</div>

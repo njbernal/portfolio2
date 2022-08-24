@@ -1,0 +1,48 @@
+.home {
+    &-container {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        min-height: 100%;
+        padding-top: 60px;
+        box-sizing: border-box;
+        color: #fff;
+    }
+
+    &-content,
+    &-rightside,
+    &-leftside {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+    }
+
+    &-rightside {
+        right: 0;
+    }
+
+    &-rightside,
+    &-leftside {
+        padding: 5px;
+        position: fixed;
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-grow: 1;
+        align-items: center;
+    }
+}
+
+app-splash {
+    width: 80%;
+    height: 100%;
+    min-height: 100%;
+}
+
+app-projects {
+    width: 80%;
+    max-width: 1000px;
+}
