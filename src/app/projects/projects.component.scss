@@ -106,33 +106,3 @@
     }
 
 }
-
-.svg-icon.github {
-    mask-image: url("/assets/icons/github.svg");
-}
-
-.svg-icon.link {
-    mask-image: url("/assets/icons/link.svg");
-}
-
-.svg-icon {
-    background-color: $purple_text;
-    height: 30px;
-    width: 30px;
-    -webkit-mask-size: contain;
-    mask-size: contain;
-    -webkit-mask-position: center;
-    mask-position: center;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-size: contain;
-    mask-size: contain;
-    -webkit-mask-position: center;
-    mask-position: center;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-}
-
-.svg-icon:hover {
-    background-color: white;
-}

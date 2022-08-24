@@ -1,41 +1,3 @@
-.home {
-    &-container {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        min-height: 100%;
-        padding-top: 60px;
-        box-sizing: border-box;
-        color: #fff;
-    }
-
-    &-content,
-    &-rightside,
-    &-leftside {
-        display: flex;
-        flex-direction: column;
-        min-height: 100%;
-    }
-
-    &-rightside {
-        right: 0;
-    }
-
-    &-rightside,
-    &-leftside {
-        padding: 5px;
-        position: fixed;
-    }
-
-    &-content {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        flex-grow: 1;
-        align-items: center;
-    }
-}
-
 app-splash {
     width: 80%;
     height: 100%;
@@ -45,4 +7,46 @@ app-splash {
 app-projects {
     width: 80%;
     max-width: 1000px;
+}
+
+.home {
+    &-container {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        padding-top: 60px;
+        height: 100%;
+        color: #fff;
+    }
+
+    &-rightside,
+    &-leftside {
+        display: flex;
+        flex-direction: column;
+        min-height: calc(100% - 90px);
+        width: 50px;
+        min-width: 50px;
+        padding: 5px;
+        position: fixed;
+    }
+
+    &-rightside {
+        justify-content: flex-end;
+    }
+
+    &-rightside .svg-icon {
+        margin-top: 30px;
+    }
+
+    &-rightside {
+        right: 0;
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-grow: 1;
+        align-items: center;
+    }
 }
