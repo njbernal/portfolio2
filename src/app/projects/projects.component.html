@@ -17,12 +17,14 @@
                 <ul class="project-tech">
                     <li *ngFor="let tech of project.tech">{{tech}}</li>
                 </ul>
-                <ul class="project-links">
-                    <li *ngFor="let link of project.links">
-                        <div *ngIf="link.name == 'Github'" class="svg-icon github"></div>
-                        <div *ngIf="link.name == 'Public'" class="svg-icon link"></div>
-                    </li>
-                </ul>
+
+                
+                <div class="project-links">
+                    <ng-container  *ngFor="let link of project.links">
+                        <a *ngIf="link.name == 'Github' && link.url != ''" href="{{link.url}}" target="_blank" class="svg-icon github"></a>
+                        <a *ngIf="link.name == 'Public' && link.url != ''" href="{{link.url}}" target="_blank" class="svg-icon link"></a>
+                    </ng-container>
+                </div>
             </div>
         </div>
     </ng-container>

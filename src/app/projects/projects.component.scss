@@ -72,6 +72,8 @@
         display: flex;
         justify-content: flex-end;
         float: right;
+        position: absolute;
+        right: 170px;
     }
 
     &-left &-image-container {
@@ -88,7 +90,8 @@
     }
 
     &-left &-description {
-        display: block;
+        display: flex;
+        align-items: center;
         max-width: 70%;
         width: 70%;
         height: 150px;
@@ -100,6 +103,9 @@
     }
 
     &-right &-description {
+        display: flex;
+        justify-content: left;
+        align-items: center;
         max-width: 70%;
         width: 70%;
         height: 150px;
@@ -120,12 +126,12 @@
     }
 
     &-left &-links {
-        margin-top: 0px;
+        margin-top: 10px;
         text-align: right;
     }
 
     &-right &-links {
-        margin-top: 0px;
+        margin-top: 10px;
     }
 
     &-tech li {
@@ -140,13 +146,11 @@
     }
 
     &-left &-tech {
-        margin-top: -30px;
+        margin-top: 0px;
         text-align: right;
     }
 
-    &-right &-tech {
-        margin-top: -30px;
-    }
+    &-right &-tech {}
 
     &-left &-tech li {
         display: inline-block;
@@ -160,17 +164,23 @@
     }
 
 
-    &-left &-links li {
-        display: inline-block;
-        margin: 0 0 0 20px;
+    &-links {
+        width: 500px;
+        height: 200px;
     }
 
-    &-right &-links li {
+    &-right &-links a.svg-icon {
         display: inline-block;
         margin: 0 20px 0 0;
     }
 
+    &-left &-links a.svg-icon {
+        display: inline-block;
+        margin: 0 0 0 20px;
+    }
 }
+
+
 
 @media only screen and (max-width: 750px) {
     .projects {

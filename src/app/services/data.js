@@ -2,7 +2,12 @@ exports.data = [
     {
         title: "Royalty",
         status: "featured",
-        description: "web app",
+        description: `
+            Automates ingestion & categorizing of millions of data points of sales data and generates financial reports for the end-user.
+            This app saves an independent record label time and money, automating financial report generation and analysis. 
+            The end-user is meant to be an artist who would like to have the latest financial data on their projects with the label.
+            Demo coming soon.
+        `,
         links: {
             "links": [
                 {
@@ -36,16 +41,19 @@ exports.data = [
     {
         title: "Ludo",
         status: "featured",
-        description: "board game",
+        description: `
+            A Ludo board game implementation using Python, a RESTful API to connect any front-end to the game logic, and a React GUI to play the game. Deployed to Heroku (Server) and Netlify (Client).
+            Currently working on a second GUI in Python, as well as a Sockets server for multi-player action!
+        `,
         links: {
             "links": [
                 {
                     "name": "Public",
-                    "url": ""
+                    "url": "https://njb-ludo.netlify.app/"
                 },
                 {
                     "name": "Github",
-                    "url": ""
+                    "url": "https://github.com/njbernal/ludo_client"
                 },
                 {
                     "name": "More",
@@ -68,16 +76,16 @@ exports.data = [
     {
         title: "Angular Portfolio",
         status: "featured",
-        description: "This portfolio website!",
+        description: "This portfolio website itself. Built using Angular, TypeScript and SASS.",
         links: {
             "links": [
                 {
                     "name": "Github",
-                    "url": ""
+                    "url": "https://github.com/njbernal/portfolio2"
                 },
                 {
                     "name": "Public",
-                    "url": ""
+                    "url": "http://www.nickbernal.com/portfolio2"
                 },
                 {
                     "name": "More",
@@ -89,9 +97,8 @@ exports.data = [
             "tech": [
                 "Angular",
                 "TypeScript",
+                "SASS",
                 "MaterialUI",
-                "Google Cloud",
-                "Strapi"
             ]
         },
         image: "website.png"
