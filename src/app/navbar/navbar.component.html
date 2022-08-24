@@ -1,9 +1,8 @@
 <mat-toolbar color="primary">
-    <a mat-button routerLink="/users">About</a>
-    <a mat-button routerLink="/add">Projects</a>
-    <a mat-button routerLink="/users">Education</a>
-    <a mat-button routerLink="/">Contact</a>
+    <a mat-button (click)="handleClick($event)" name="home">About</a>
+    <a mat-button (click)="handleClick($event)" name="projects">Projects</a>
+    <a mat-button (click)="handleClick($event)" name="education">Education</a>
+    <a mat-button (click)="handleClick($event)" name="contact">Contact</a>
     <div class="spacer"></div>
     <span>Nicolas Bernal's Portfolio</span>
-    
 </mat-toolbar>

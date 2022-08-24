@@ -34,17 +34,20 @@ export class ProjectsComponent implements OnInit, OnDestroy {
       .subscribe((projectsList: APIResponse<Project>) => {
         const result = projectsList.data;
         const new_projects = [];
+        let i = 0;
         for (let project of projectsList.data) {
-
+          let position = i % 2 != 0 ? 'project-left' : 'project-right'
           const obj = {
             title: project.attributes.title,
             status: project.attributes.status,
             description: project.attributes.description,
-            image: `${env.BASE_URL}${project.attributes.image.data.attributes.formats.small.url}`,
+            image: `${env.BASE_URL}${project.attributes.image.data.attributes.url}`,
             tech: project.attributes.tech.tech,
-            links: project.attributes.links.links
+            links: project.attributes.links.links,
+            position
           } as CleanProject;
           new_projects.push(obj)
+          i++;
         }
         this.projects = new_projects;
       })

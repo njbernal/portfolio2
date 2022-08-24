@@ -1,8 +1,9 @@
+<!-- Icons are from https://angularicons.com/ -->
 <div class="projects-container">
     <h1 class="projects-h1">Current projects</h1>
-    <mat-divider variant="string">test</mat-divider>
-    <ng-container *ngFor="let project of projects">
-        <div class="project">
+    <mat-divider variant="string"></mat-divider>
+    <ng-container *ngFor="let project of projects; let i = index;">
+        <div [ngClass]="project.position">
             <div class="project-image-container">
                 <img class="project-image" [src]="project.image" />
             </div>

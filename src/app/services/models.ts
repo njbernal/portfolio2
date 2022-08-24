@@ -11,11 +11,7 @@ export interface Project {
         image: {
             data: {
                 attributes: {
-                    formats: {
-                        small: {
-                            url: string
-                        }
-                    }
+                    url: string
                 }
             }
         },
@@ -34,7 +30,8 @@ export interface CleanProject {
     description: string,
     image: string,
     tech: Array<string>,
-    links: Array<Links>
+    links: Array<Links>,
+    position: string
 }
 
 interface Links {

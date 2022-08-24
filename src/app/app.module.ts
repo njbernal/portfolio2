@@ -15,6 +15,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { SplashComponent } from './splash/splash.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
+import { ContactComponent } from './contact/contact.component';
+import { EducationComponent } from './education/education.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { MainpageComponent } from './mainpage/mainpage.component';
     SplashComponent,
     ProjectsComponent,
     MainpageComponent,
+    ContactComponent,
+    EducationComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +36,7 @@ import { MainpageComponent } from './mainpage/mainpage.component';
     MatToolbarModule,
     MatButtonModule,
     MatDividerModule,
-    MatIconModule
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
