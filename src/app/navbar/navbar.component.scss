@@ -10,6 +10,13 @@
     font-weight: 200;
 }
 
+.mat-toolbar span {
+    font-size: 0.6em;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: $purple_text;
+}
+
 .mat-button {
     color: white;
     font-weight: 200;
@@ -17,4 +24,12 @@
 
 .spacer {
     flex: 1 1 auto;
+}
+
+
+@media only screen and (max-width: 750px) {
+
+    .mat-toolbar span {
+        display: none;
+    }
 }

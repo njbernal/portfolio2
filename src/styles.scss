@@ -61,3 +61,10 @@ body * {
 .mat-divider {
     margin: 0px 0 20px 0 !important;
 }
+
+@media only screen and (max-width: 750px) {
+    .svg-icon {
+        height: 25px;
+        width: 25px;
+    }
+}

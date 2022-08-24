@@ -35,3 +35,19 @@
         color: $muted_text;
     }
 }
+
+
+@media only screen and (max-width: 750px) {
+    .education {
+        margin-top: 0;
+
+        &-container {
+            padding: 0;
+            font-size: 0.8em;
+        }
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+}

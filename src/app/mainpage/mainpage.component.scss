@@ -62,3 +62,14 @@ app-education {
         align-items: center;
     }
 }
+
+@media only screen and (max-width: 750px) {
+    .home {
+
+        &-rightside,
+        &-leftside {
+            width: 35px;
+            min-width: 35px;
+        }
+    }
+}
