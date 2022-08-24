@@ -62,6 +62,26 @@ body * {
     margin: 0px 0 20px 0 !important;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: $purple_text_op;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $purple_text;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $purple_text;
+}
+
 @media only screen and (max-width: 750px) {
     .svg-icon {
         height: 25px;
